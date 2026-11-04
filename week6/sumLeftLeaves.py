@@ -12,4 +12,6 @@ class Solution:
         if root.left is None and root.right is None:
             if left:
                 return root.val
+            else:
+                return 0
         return self.sumOfLeftLeaves(root.left, True) + self.sumOfLeftLeaves(root.right)
